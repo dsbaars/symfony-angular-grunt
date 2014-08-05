@@ -1,0 +1,30 @@
+{
+  "name": "symfony-angular-grunt",
+  "version": "1.0.0",
+  "description": "Example project of the SF2+AngularJS+Grunt combination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "symfony",
+    "combination",
+    "boilerplate"
+  ],
+  "author": "Djuri Baars <dsbaars@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-injector": "^0.5.4"
+  },
+  "dependencies": {
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-injector": "^0.5.4",
+    "load-grunt-configs": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}

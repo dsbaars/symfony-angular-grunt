@@ -1,0 +1,29 @@
+{
+  "name": "symfony-angular-grunt",
+  "version": "1.0.0",
+  "authors": [
+    "Djuri Baars <dsbaars@gmail.com>"
+  ],
+  "description": "Example project of the SF2+AngularJS+Grunt combination",
+  "main": "index.js",
+  "keywords": [
+    "example",
+    "symfony",
+    "combination",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.21",
+    "angular-ui-router": "~0.2.10",
+    "angular-bootstrap": "~0.11.0"
+  }
+}

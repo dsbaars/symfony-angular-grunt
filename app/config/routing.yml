@@ -1,0 +1,5 @@
+dsbaars_demo:
+    resource: "@DsbaarsDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

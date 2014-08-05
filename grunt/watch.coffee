@@ -20,27 +20,27 @@ module.exports =
             "less"
         ]
     gruntConfig:
-      options:
-          reload: true
-      files: [
-          "grunt/**/*.coffee"
-      ]
+        options:
+            reload: true
+        files: [
+              "grunt/**/*.coffee"
+          ]
     bower:
-      options:
-          livereload: true
-      files: [
-          "bower.json"
-      ]
-      tasks: [
-          "injector"
-      ]
+        options:
+            livereload: true
+        files: [
+            "bower.json"
+        ]
+        tasks: [
+            "injector"
+        ]
     layout:
-      options:
-          livereload: true
-      files: [
-          "app/Resources/views/**/*.html.twig.clean"
-      ]
-      tasks: [
-          "copy"
-          "injector"
-      ]
+        options:
+            livereload: true
+        files: [
+            "app/Resources/views/**/*.html.twig.clean"
+        ]
+        tasks: [
+            "copy"
+            "injector"
+        ]

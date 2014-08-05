@@ -2,14 +2,13 @@
 
 options =
     config:
-        src: "grunt/*.coffee"
+        src: 'grunt/*.coffee'
 
 module.exports = (grunt) ->
-    grunt.initConfig
-        pkg: grunt.file.readJSON("package.json")
+    config = require('load-grunt-configs')(grunt, options)
 
-    grunt.config.merge require('load-grunt-configs')(grunt, options)
-    require('load-grunt-tasks')(grunt);
+    grunt.initConfig config
+    require('load-grunt-tasks')(grunt)
 
     grunt.registerTask "default", "Build everything", [
         "copy"
@@ -17,4 +16,11 @@ module.exports = (grunt) ->
         "less"
         "injector"
         "watch"
+    ]
+
+    grunt.registerTask "verification", "Linting and stuff", [
+        "coffeelint"
+        "phpcs"
+        "sf2-console:twiglint1"
+        "sf2-console:twiglint2"
     ]

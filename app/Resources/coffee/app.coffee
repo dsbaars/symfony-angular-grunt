@@ -1,7 +1,13 @@
 app = angular.module("dsbaars", [
-    'ui.bootstrap'
-    'ui.router'
-    ], ($interpolateProvider, $stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->
+        'ui.bootstrap'
+        'ui.router'
+    ], (
+    $interpolateProvider,
+    $stateProvider,
+    $urlRouterProvider,
+    $locationProvider,
+    $httpProvider
+    ) ->
     $interpolateProvider.startSymbol('[[')
     $interpolateProvider.endSymbol(']]')
 

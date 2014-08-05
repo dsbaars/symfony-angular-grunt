@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "dsbaars/symfony-angular-grunt",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Example project of the SF2+AngularJS+Grunt combinatio",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
@@ -33,7 +33,9 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::checkToolAvailability",
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::installNpmAssets",
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::installBowerAssets"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -41,7 +43,10 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::checkToolAvailability",
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::installNpmAssets",
+            "Dsbaars\\Bundle\\NodejsToolBundle\\Composer\\ScriptHandler::installBowerAssets"
         ]
     },
     "config": {

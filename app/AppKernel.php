@@ -19,6 +19,7 @@ class AppKernel extends Kernel
 
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Dsbaars\Bundle\DemoBundle\DsbaarsDemoBundle(),
+            new Dsbaars\Bundle\NodejsToolBundle\DsbaarsNodejsToolBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

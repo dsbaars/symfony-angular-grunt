@@ -14,6 +14,29 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return array();
+        return array(
+
+        );
+    }
+
+    /**
+     * @Route("/partial/hello")
+     * @Template()
+     */
+    public function helloAction()
+    {
+        return array(
+            'hello' => 'Hello from Twig with curly braces'
+        );
+    }
+
+    /**
+     * @Route("/partial/demo")
+     * @Template()
+     */
+    public function demoAction()
+    {
+        return array(
+        );
     }
 }

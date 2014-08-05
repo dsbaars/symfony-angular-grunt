@@ -3,6 +3,7 @@
 /app/cache/*
 /app/config/parameters.yml
 /app/logs/*
+/app/Resources/views/base.html.twig
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 /build/

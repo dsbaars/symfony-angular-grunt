@@ -5,3 +5,4 @@ module.exports = development:
         "web/css/app.css" : [
             "src/**/*.less"
             "app/Resources/less/**/*.less"
+        ]

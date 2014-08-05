@@ -5,7 +5,9 @@ module.exports =
     default:
         expand: true
         flatten: true
-        cwd: "src/"
-        src: ["**/*.coffee"]
+        src: [
+            "app/Resources/coffee/**/*.coffee"
+            "src/**/*.coffee"
+            ]
         dest: "web/ng"
         ext: ".js"

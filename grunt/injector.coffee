@@ -1,10 +1,11 @@
 module.exports =
       options:
           ignorePath: [ 'web/' ]
+          min: true
       app:
           files:
-              'app/Resources/views/client.html.twig': [
+              'app/Resources/views/base.html.twig': [
                 'bower.json'
-                'web/css/client.css'
+                'web/css/*.css'
                 'web/ng/**/*.js'
               ]

@@ -12,7 +12,9 @@ module.exports = (grunt) ->
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask "default", "Build everything", [
-        "less",
-        "injector",
+        "copy"
+        "coffee"
+        "less"
+        "injector"
         "watch"
     ]

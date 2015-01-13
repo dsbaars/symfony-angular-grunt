@@ -3,6 +3,8 @@ Symfony 2 + AngularJS + Grunt
 
 This is an example project to show how you can combine Symfony 2, AngularJS and Grunt.
 
+__Update 14/01/15__: Added some bundles to implement REST, still needs ngResource example. Check out [@DsbaarsDemoBundle/ApiController/DefaultController.php](src/Dsbaars/Bundle/DemoBundle/ApiController/DefaultController.php)
+
   - [Requirements](#requirements)
   - [How to install and run](#how-to-install-and-run)
     - [Dependencies](#dependencies)
@@ -65,7 +67,12 @@ with the following changes:
 You can add a REST API using:
 - [friendsofsymfony/rest-bundle](https://packagist.org/packages/friendsofsymfony/rest-bundle)
 - [nelmio/api-doc-bundle](https://packagist.org/packages/nelmio/api-doc-bundle) - for auto-generated documentation
-- I did not find something for AngularJS yet, although [ngResource](https://github.com/angular/angular.js/tree/master/src/ngResource) looks very suitable for that.
+- <S>I did not find something for AngularJS yet, although [ngResource](https://github.com/angular/angular.js/tree/master/src/ngResource) looks very suitable for that.</s>
+
+__Update 14/01/15__: I use  [ngResource](https://github.com/angular/angular.js/tree/master/src/ngResource) because it is indeed very suitable. I added all three to this example, because it would not make sense to use this combination without something like this
+
+If you want to implement stateless authentication with tokens, check out:
+- [lexik/jwt-authentication-bundle](https://packagist.org/packages/lexik/jwt-authentication-bundle)
 
 Also WebSockets are very interesting:
 - [Ratchet](http://socketo.me/) WebSockets for PHP, looks promising.

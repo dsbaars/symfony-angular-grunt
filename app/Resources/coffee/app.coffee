@@ -12,7 +12,7 @@ app = angular.module("dsbaars", [
     $interpolateProvider.endSymbol(']]')
 
     $urlRouterProvider
-      .otherwise('/')
+        .otherwise('/')
 
     $locationProvider.html5Mode(true)
 

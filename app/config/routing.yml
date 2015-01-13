@@ -5,6 +5,13 @@ dsbaars_demo:
     options:
         expose: true
 
+dsbaars_demo_api:
+    resource: "@DsbaarsDemoBundle/ApiController/"
+    type:     annotation
+    prefix:   /api
+    options:
+        expose: true
+
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 

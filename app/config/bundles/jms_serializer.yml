@@ -1,0 +1,13 @@
+jms_serializer:
+    handlers:
+        datetime:
+            default_format: "c" # ISO8601
+            default_timezone: "Europe/Amsterdam"
+    property_naming:
+        separator:  _
+        lower_case: true
+    metadata:
+        cache: file
+        debug: "%kernel.debug%"
+        file_cache:
+            dir: "%kernel.cache_dir%/serializer"

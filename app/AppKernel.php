@@ -17,6 +17,15 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
+            # This is all useful to create a REST API
+            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            new JMS\AopBundle\JMSAopBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            # REST stuff ends here
+
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Dsbaars\Bundle\DemoBundle\DsbaarsDemoBundle(),
             new Dsbaars\Bundle\NodejsToolBundle\DsbaarsNodejsToolBundle(),

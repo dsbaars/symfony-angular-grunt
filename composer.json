@@ -3,6 +3,7 @@
     "license": "MIT",
     "type": "project",
     "description": "Example project of the SF2+AngularJS+Grunt combinatio",
+    "version": "1.0.1",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
@@ -18,8 +19,13 @@
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-        "friendsofsymfony/jsrouting-bundle": "@stable",
-        "asm89/twig-lint": "@stable"
+        "friendsofsymfony/jsrouting-bundle": "1.5.*",
+        "friendsofsymfony/rest-bundle": "1.4.2",
+        "nelmio/api-doc-bundle": "2.7.*",
+        "jms/serializer": "0.16.*",
+        "jms/di-extra-bundle": "1.5.*",
+        "jms/serializer-bundle": "0.13.0",
+        "nelmio/cors-bundle": "1.4.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

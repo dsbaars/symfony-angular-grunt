@@ -1,0 +1,4 @@
+sensio_framework_extra:
+    # Required by FOSRestBundle view_response_listener
+    # see: https://github.com/FriendsOfSymfony/FOSRestBundle/blob/1.4.2/Resources/doc/3-listener-support.md
+    view:    { annotations: false }

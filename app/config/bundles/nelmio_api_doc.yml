@@ -1,0 +1,10 @@
+nelmio_api_doc:
+    sandbox:
+        authentication:
+            delivery: http
+            # You probably want this, if you want to stay RESTful
+            type:     bearer
+        body_format:
+            formats:
+                - json
+            default_format: json

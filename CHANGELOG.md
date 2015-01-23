@@ -1,3 +1,10 @@
+1.0.2
+-----
+- Upgraded to Symfony 2.6.3
+- Updated to Bootstrap 3.3.2
+- Added Font Awesome 4.3.0
+- Added support files (.editorconfig, .travis.yml)
+
 1.0.1
 -----
 - Updated dependencies, most important ones: Symfony 2.5.9, Bootstrap 3.3.1, AngularJS 1.2.28

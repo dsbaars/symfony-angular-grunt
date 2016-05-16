@@ -1,7 +1,5 @@
 language: php
 php:
-    - 5.3
-    - 5.4
     - 5.5
     - 5.6
     - 7.0
@@ -13,7 +11,9 @@ install:
     - npm install || true
     - bower install
     - composer install -n
-script: grunt verification
+script:
+    - grunt verification
+    - phpcs --standard=PSR2 src
 branches:
     only:
         - master

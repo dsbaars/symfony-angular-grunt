@@ -17,7 +17,9 @@ use FOS\RestBundle\View\View;
 */
 class DefaultController extends FOSRestController
 {
-    /** @DI\Inject("doctrine.orm.entity_manager") */
+    /**
+ * @DI\Inject("doctrine.orm.entity_manager")
+*/
     private $em;
 
     /**

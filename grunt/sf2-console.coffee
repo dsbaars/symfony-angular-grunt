@@ -2,6 +2,6 @@
 # I might write one myself someday
 module.exports =
     twiglint1:
-        cmd: 'twig:lint @DsbaarsDemoBundle'
+        cmd: 'lint:twig @DsbaarsDemoBundle'
     twiglint2:
-        cmd: 'twig:lint @DsbaarsNodejsToolBundle'
+        cmd: 'lint:twig @DsbaarsNodejsToolBundle'

@@ -46,10 +46,10 @@ For SF2 development Vagrant does not seem to be very slow, even after optimizing
 
 ### PHP
 
-Symfony 2.5 standard edition (without Acme-Demo-stuff)
+Symfony 2.8 standard edition (without Acme-Demo-stuff)
 with the following changes:
 - AsseticBundle disabled
-- FOSJsRoutingBundle
+- added bundles like FOSJsRoutingBundle,FOSRestBundle which are useful when using AngularJS
 
 ### JavaScript ("Server-side")
 

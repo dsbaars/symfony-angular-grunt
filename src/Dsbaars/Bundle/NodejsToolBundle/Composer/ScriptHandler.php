@@ -11,9 +11,11 @@ class ScriptHandler extends BaseScriptHandler
     public static function checkToolAvailability($event)
     {
         $process = new Process('which npm', null, null, null, 300);
-        $process->run(function ($type, $buffer) {
-            echo $buffer;
-        });
+        $process->run(
+            function ($type, $buffer) {
+                echo $buffer;
+            }
+        );
 
         if (!$process->isSuccessful()) {
             throw new \RuntimeException(
@@ -23,9 +25,11 @@ class ScriptHandler extends BaseScriptHandler
         }
 
         $process = new Process('which bower', null, null, null, 300);
-        $process->run(function ($type, $buffer) {
-            echo $buffer;
-        });
+        $process->run(
+            function ($type, $buffer) {
+                echo $buffer;
+            }
+        );
         if (!$process->isSuccessful()) {
             throw new \RuntimeException(
                 'It looks like you don\'t have bower installed (globally). ' .
@@ -38,30 +42,38 @@ class ScriptHandler extends BaseScriptHandler
     public static function installNpmAssets($event)
     {
         $process = new Process('npm install || true', null, null, null, 300);
-        $process->run(function ($type, $buffer) {
-            echo $buffer;
-        });
+        $process->run(
+            function ($type, $buffer) {
+                echo $buffer;
+            }
+        );
 
         if (!$process->isSuccessful()) {
-            throw new \RuntimeException(sprintf(
-                'An error occurred when executing the "%s" command.',
-                escapeshellarg($cmd)
-            ));
+            throw new \RuntimeException(
+                sprintf(
+                    'An error occurred when executing the "%s" command.',
+                    escapeshellarg($cmd)
+                )
+            );
         }
     }
 
     public static function installBowerAssets($event)
     {
         $process = new Process('bower install', null, null, null, 300);
-        $process->run(function ($type, $buffer) {
-            echo $buffer;
-        });
+        $process->run(
+            function ($type, $buffer) {
+                echo $buffer;
+            }
+        );
 
         if (!$process->isSuccessful()) {
-            throw new \RuntimeException(sprintf(
-                'An error occurred when executing the "%s" command.',
-                escapeshellarg($cmd)
-            ));
+            throw new \RuntimeException(
+                sprintf(
+                    'An error occurred when executing the "%s" command.',
+                    escapeshellarg($cmd)
+                )
+            );
         }
     }
 }

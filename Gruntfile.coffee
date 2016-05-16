@@ -22,7 +22,6 @@ module.exports = (grunt) ->
 
     grunt.registerTask "verification", "Linting and stuff", [
         "coffeelint"
-        "phpcs"
         "sf2-console:twiglint1"
         "sf2-console:twiglint2"
     ]

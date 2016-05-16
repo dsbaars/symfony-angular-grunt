@@ -10,7 +10,7 @@ before_install:
 install:
     - npm install -g grunt-cli
     - npm install -g bower
-    - npm install
+    - npm install || true
     - bower install
     - composer install -n
 script: grunt verification

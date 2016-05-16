@@ -1,23 +1,25 @@
-app = angular.module("dsbaars", [
-        'ui.bootstrap'
-        'ui.router'
-    ], (
-    $interpolateProvider,
-    $stateProvider,
-    $urlRouterProvider,
-    $locationProvider,
-    $httpProvider
-    ) ->
-    $interpolateProvider.startSymbol('[[')
-    $interpolateProvider.endSymbol(']]')
+(->
+    config = (
+        $interpolateProvider,
+        $stateProvider,
+        $urlRouterProvider,
+        $locationProvider,
+        $httpProvider
+        ) ->
+        $interpolateProvider.startSymbol('[[')
+        $interpolateProvider.endSymbol(']]')
 
-    $urlRouterProvider
-        .otherwise('/')
+        $urlRouterProvider
+            .otherwise('/')
 
-    $locationProvider.html5Mode(true)
+        $locationProvider.html5Mode(true)
 
-    return
-)
+        return
 
-app.controller("MainCtrl", MainCtrl)
-app.controller("DemoCtrl", DemoCtrl)
+    angular
+        .module("dsbaars", [
+            'ui.bootstrap'
+            'ui.router'
+        ])
+        .config(config)
+)()

@@ -1,12 +1,20 @@
 module.exports =
     options:
-        join: true
+        join: false
         bare: true
     default:
         expand: true
-        flatten: true
+        flatten: false
+        cwd: "app/Resources/coffee"
         src: [
-            "app/Resources/coffee/**/*.coffee"
+            "**/*.coffee"
+            ]
+        dest: "web/ng"
+        ext: ".js"
+    bundles:
+        expand: true
+        flatten: false
+        src: [
             "src/**/*.coffee"
             ]
         dest: "web/ng"

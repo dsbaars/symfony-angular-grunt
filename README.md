@@ -3,6 +3,7 @@ Symfony 2 + AngularJS + Grunt
 
 This is an example project to show how you can combine Symfony 2, AngularJS and Grunt.
 
+__Update 16/05/16__: Improved AngularJS code using [johnpapa's angular styleguide](https://github.com/johnpapa/angular-styleguide) (actually the [CoffeeScript variant](https://github.com/Plateful/plateful-mobile/wiki/AngularJS-CoffeeScript-Style-Guide)<br>
 __Update 14/01/15__: Added some bundles to implement REST, still needs ngResource example. Check out [@DsbaarsDemoBundle/ApiController/DefaultController.php](src/Dsbaars/Bundle/DemoBundle/ApiController/DefaultController.php)
 
   - [Requirements](#requirements)

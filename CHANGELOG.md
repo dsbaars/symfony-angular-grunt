@@ -1,3 +1,11 @@
+1.0.3
+-----
+- Upgraded to Symfony 2.8.6 (2.8 is LTS)
+- Updated Bootstrap, Font Awesome, Angular, jQuery
+- Upgraded bundles to recent stable versions
+- Improved AngularJS code using johnpapa's styleguide
+- Added grunt-lineending plug-in since grunt-injector is broken
+
 1.0.2
 -----
 - Upgraded to Symfony 2.6.3

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:ng="http://angularjs.org" ng-app="dsbaars">
     <head>
+        <base href="/">
         <meta charset="UTF-8" />
         <title>{% block title %}Symfony+Angular Demo{% endblock %}</title>
         {% block stylesheets %}{% endblock %}

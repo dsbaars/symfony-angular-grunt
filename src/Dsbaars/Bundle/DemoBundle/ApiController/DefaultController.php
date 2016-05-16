@@ -32,6 +32,7 @@ class DefaultController extends FOSRestController
     */
     public function indexAction()
     {
-        return array();
+        $view = $this->view(array(), 200);
+        return $this->handleView($view);
     }
 }

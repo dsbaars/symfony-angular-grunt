@@ -11,7 +11,7 @@ fos_rest:
             - { path: '^/api', priorities: ['json'], fallback_format: json, prefer_extension: false }
             - { path: '^/', priorities: [ 'text/html', '*/*'], fallback_format: html, prefer_extension: true }
     view:
-        view_response_listener: 'force'
+        view_response_listener: true
         exception_wrapper_handler:  FOS\RestBundle\View\ExceptionWrapperHandler
     access_denied_listener:
         json: true

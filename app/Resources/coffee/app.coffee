@@ -5,7 +5,7 @@
         $urlRouterProvider,
         $locationProvider,
         $httpProvider
-        ) ->
+    ) ->
         $interpolateProvider.startSymbol('[[')
         $interpolateProvider.endSymbol(']]')
 

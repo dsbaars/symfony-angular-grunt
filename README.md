@@ -1,6 +1,8 @@
 Symfony 2 + AngularJS + Grunt
 ========================
 
+[![Build Status](https://travis-ci.org/dsbaars/symfony-angular-grunt.svg?branch=master)](https://travis-ci.org/dsbaars/symfony-angular-grunt)
+
 This is an example project to show how you can combine Symfony 2, AngularJS and Grunt.
 
 __Update 16/05/16__: Improved AngularJS code using [johnpapa's angular styleguide](https://github.com/johnpapa/angular-styleguide) (actually the [CoffeeScript variant](https://github.com/Plateful/plateful-mobile/wiki/AngularJS-CoffeeScript-Style-Guide)<br>
@@ -79,7 +81,7 @@ Also WebSockets are very interesting:
 - [Ratchet](http://socketo.me/) WebSockets for PHP, looks promising.
 - [socket.io](http://socket.io/) - Very easy to use - at least in JavaScript. I did not see how to fit the server-functionality in a SF2-project yet.
 
-## Why did  I want this?
+## Why did I want this?
 
 I like Symfony 2, but after I used some JS-based frameworks I found out that:
 

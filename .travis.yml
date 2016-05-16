@@ -13,7 +13,7 @@ install:
     - composer install -n
 script:
     - grunt verification
-    - phpcs --standard=PSR2 src
+    - vendor/squizlabs/php_codesniffer/scripts/phpcs --standard=PSR2 src
 branches:
     only:
         - master
